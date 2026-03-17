@@ -1,0 +1,22 @@
+body {
+    /* 1. Turn on flexbox for this element */
+    display: flex;
+    /* 2. Center items left-to-right (Horizontally) */
+    justify-content: center;
+    /* 3. center items top-to-bottom (vertically) */
+    align-items: center;
+    /* we also need to give the body a hight, otherwise it shrinks 
+    to the size of the text */
+    height: 100vh;
+    /* vh stands for Viewport Height. 100vh = 100%
+    of the screen height */
+    /* reset default margin that browsers add */
+    margin: 0;
+    background-color: #282c34;
+}
+
+#clock-display {
+    color: cyan;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+}
