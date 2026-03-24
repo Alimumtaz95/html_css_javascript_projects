@@ -1,0 +1,36 @@
+body {
+    background-color: #1e1e24;
+    padding: 50px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    animation: floatUp 1s ease-out forwards;
+}
+
+.gallery-item {
+    background-color: coral;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    background-color: #fca011;
+    box-shadow: 00 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
