@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(62, 5, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 12%; */
+}
+
+h1 {
+    color: rgb(242, 6, 6);
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#movie-input {
+    padding: 05px;
+    background-color: rgb(229, 122, 243);
+    border-radius: 4px;
+    border: none;
+}
+
+#search-btn {
+    padding: 5px;
+    background-color: rgb(111, 5, 77);
+    color: antiquewhite;
+    border-radius: 10px;
+    border-color: black;
+}
+
+#search-btn:hover {
+    cursor: pointer;
+    background-color: rgb(208, 17, 233);
+}
+
+#movie-grid {
+    display: grid;
+    /* This automatically creates as many 250px columns as can fit on the screen! */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+}
+
+.movie-card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card img {
+    /* Make sure the poster image fits inside the card without breaking it */
+    max-width: 100%;
+    border-radius: 5px;
+}
